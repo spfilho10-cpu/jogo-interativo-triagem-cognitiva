@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="animals">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="description" content="Jogo Interativo de Triagem Cognitiva com 6 fases validadas e personalização infantil e adulta.">
+  <meta name="theme-color" content="#064e3b">
+  <title>Jogo Interativo de Triagem Cognitiva (6 Fases)</title>
+  
+  <!-- SEO, Open Graph & Redes Sociais -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="./">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Jogo Interativo de Triagem Cognitiva (6 Fases)">
+  <meta property="og:description" content="Bateria computacional interativa de triagem cognitiva com 6 fases validadas e personalização visual lúdica para crianças e adultos.">
+  <meta property="og:image" content="assets/icons/icon-512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jogo Interativo de Triagem Cognitiva">
+  <meta name="twitter:description" content="Bateria computacional de triagem neurocognitiva com 6 fases validadas para crianças, adolescentes e adultos.">
+
+  <!-- Schema.org WebApplication JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Jogo Interativo de Triagem Cognitiva",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "description": "Jogo interativo de triagem cognitiva com 6 fases baseadas em neurociência computacional e relatórios de funções executivas.",
+    "inLanguage": "pt-BR",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    }
+  }
+  </script>
+
+  <link rel="manifest" href="manifest.json?v=5">
+  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+</head>
+<body>
+
+  <!-- Acessibilidade WCAG 2.1: Salto para o Conteúdo Principal -->
+  <a href="#mainViewport" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho Principal -->
+  <header class="app-header" role="banner">
+    <div class="brand-badge">
+      <div class="brand-icon" aria-hidden="true">⚡</div>
+      <span>Triagem Cognitiva <small style="font-weight: 400; color: var(--accent-info); font-size: 0.8rem;">6 Fases</small></span>
+    </div>
+
+    <div class="header-controls">
+      <!-- Botão Voltar ao Início / Reconfigurar -->
+      <button id="btnHome" class="icon-btn" aria-label="Voltar ao início" title="Voltar ao Início / Alterar Configurações">
+        🏠
+      </button>
+
+      <!-- Seletor Rápido de Temas no Cabeçalho (dinamicamente filtrado por idade) -->
+      <select id="headerThemeSelector" class="theme-selector-dropdown" aria-label="Alterar tema visual" title="Tema Visual">
+      </select>
+
+      <button id="btnToggleAudio" class="icon-btn" aria-label="Alternar áudio" title="Som (Ativar/Desativar)">
+        🔊
+      </button>
+      <button id="btnFullscreen" class="icon-btn" aria-label="Tela cheia" title="Tela Cheia">
+        ⤢
+      </button>
+    </div>
+  </header>
+
+  <!-- Contêiner Principal da Aplicação -->
+  <main id="mainViewport" class="main-viewport" role="main" aria-live="polite">
+    <!-- Telas injetadas dinamicamente via app.js -->
+  </main>
+
+  <script type="module" src="js/app.js?v=5"></script>
+
+  <!-- Atualização e descarte forçado de cache legado -->
+  <script>
+    if ('caches' in window) {
+      caches.keys().then(names => {
+        names.forEach(name => {
+          if (name !== 'neuroscreen-tdah-v5') {
+            caches.delete(name);
+          }
+        });
+      });
+    }
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js?v=5')
+          .then(reg => {
+            reg.update();
+            console.log('Service Worker v3 Network-First ativo');
+          })
+          .catch(err => console.log('Falha no Service Worker:', err));
+      });
+    }
+  </script>
+</body>
+</html>

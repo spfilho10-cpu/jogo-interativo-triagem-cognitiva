@@ -1,0 +1,25 @@
+# Logs e arquivos temporários de sistema
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Dependências (se empacotado posteriormente)
+node_modules/
+dist/
+build/
+
+# Arquivos de IDE e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Caches locais
+.cache/
+.parcel-cache/
+.eslintcache

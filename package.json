@@ -1,0 +1,26 @@
+{
+  "name": "jogo-interativo-triagem-cognitiva",
+  "version": "2.1.0",
+  "description": "Jogo Interativo de Triagem Cognitiva com 6 fases neuropsicológicas validadas e personalização visual infantil e adulta (PWA).",
+  "main": "js/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "serve": "npx serve -p 8080 .",
+    "test": "node tests/test_metrics.js"
+  },
+  "keywords": [
+    "tdah",
+    "adhd",
+    "jogos-serios",
+    "triagem-cognitiva",
+    "neuropsicologia",
+    "cpt",
+    "go-no-go",
+    "flanker",
+    "working-memory",
+    "pwa"
+  ],
+  "author": "NeuroScreen Dev Team",
+  "license": "MIT"
+}

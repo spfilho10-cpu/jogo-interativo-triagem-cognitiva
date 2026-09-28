@@ -1,0 +1,22 @@
+{
+  "name": "NeuroScreen TDAH - Triagem Cognitiva",
+  "short_name": "NeuroScreen",
+  "description": "Jogo sério interativo para triagem inicial de indicadores atencionais e impulsividade.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1329",
+  "theme_color": "#0b1329",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 192 192%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%230b1329%22/><text x=%2250%25%22 y=%2255%25%22 font-size=%22110%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>🧠</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%230b1329%22/><text x=%2250%25%22 y=%2255%25%22 font-size=%22320%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>🧠</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
