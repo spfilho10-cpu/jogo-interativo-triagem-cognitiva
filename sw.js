@@ -2,7 +2,7 @@
  * Service Worker com Estratégia Network-First e Auto-Atualização
  */
 
-const CACHE_NAME = 'neuroscreen-tdah-v5';
+const CACHE_NAME = 'neuroscreen-tdah-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

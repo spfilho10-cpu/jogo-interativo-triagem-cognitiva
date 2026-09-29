@@ -202,6 +202,13 @@ export class ReportUI {
       this.drawRadarChart(scores);
     }, 60);
 
+    window.addEventListener('beforeprint', () => {
+      this.drawRadarChart(scores, true);
+    });
+    window.addEventListener('afterprint', () => {
+      this.drawRadarChart(scores, false);
+    });
+
     document.getElementById('btnExportJSON')?.addEventListener('click', () => this.state.exportJSON());
     document.getElementById('btnExportCSV')?.addEventListener('click', () => this.state.exportCSV());
     document.getElementById('btnPrintReport')?.addEventListener('click', () => window.print());
@@ -265,7 +272,7 @@ export class ReportUI {
     return insights.map(item => `<li>${item}</li>`).join('');
   }
 
-  drawRadarChart(scores) {
+  drawRadarChart(scores, isPrint = false) {
     const canvas = document.getElementById('reportRadarCanvas');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
@@ -276,6 +283,11 @@ export class ReportUI {
     const radius = 135;
 
     ctx.clearRect(0, 0, width, height);
+
+    if (isPrint) {
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, width, height);
+    }
 
     const labels = [
       'Inibição',
@@ -300,7 +312,7 @@ export class ReportUI {
 
     // Teia de fundo poligonal (20% a 100%)
     const levels = [0.2, 0.4, 0.6, 0.8, 1.0];
-    ctx.strokeStyle = 'rgba(100, 116, 139, 0.35)';
+    ctx.strokeStyle = isPrint ? 'rgba(148, 163, 184, 0.55)' : 'rgba(100, 116, 139, 0.35)';
     ctx.lineWidth = 1;
 
     levels.forEach(level => {
@@ -325,14 +337,14 @@ export class ReportUI {
       ctx.beginPath();
       ctx.moveTo(centerX, centerY);
       ctx.lineTo(x, y);
-      ctx.strokeStyle = 'rgba(100, 116, 139, 0.5)';
+      ctx.strokeStyle = isPrint ? 'rgba(100, 116, 139, 0.65)' : 'rgba(100, 116, 139, 0.5)';
       ctx.stroke();
 
       const labelX = centerX + Math.cos(angle) * (radius + 28);
       const labelY = centerY + Math.sin(angle) * (radius + 16);
 
-      ctx.font = '600 11px system-ui';
-      ctx.fillStyle = '#94a3b8';
+      ctx.font = isPrint ? 'bold 11px system-ui' : '600 11px system-ui';
+      ctx.fillStyle = isPrint ? '#0f172a' : '#94a3b8';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillText(labels[i], labelX, labelY);
@@ -350,9 +362,9 @@ export class ReportUI {
     }
     ctx.closePath();
 
-    ctx.fillStyle = 'rgba(56, 189, 248, 0.32)';
+    ctx.fillStyle = isPrint ? 'rgba(2, 132, 199, 0.22)' : 'rgba(56, 189, 248, 0.32)';
     ctx.fill();
-    ctx.strokeStyle = '#38bdf8';
+    ctx.strokeStyle = isPrint ? '#0284c7' : '#38bdf8';
     ctx.lineWidth = 2.5;
     ctx.stroke();
 

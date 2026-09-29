@@ -37,8 +37,8 @@
   }
   </script>
 
-  <link rel="manifest" href="manifest.json?v=5">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="manifest" href="manifest.json?v=6">
+  <link rel="stylesheet" href="css/style.css?v=6">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
 </head>
 <body>
@@ -77,14 +77,14 @@
     <!-- Telas injetadas dinamicamente via app.js -->
   </main>
 
-  <script type="module" src="js/app.js?v=5"></script>
+  <script type="module" src="js/app.js?v=6"></script>
 
   <!-- Atualização e descarte forçado de cache legado -->
   <script>
     if ('caches' in window) {
       caches.keys().then(names => {
         names.forEach(name => {
-          if (name !== 'neuroscreen-tdah-v5') {
+          if (name !== 'neuroscreen-tdah-v6') {
             caches.delete(name);
           }
         });
@@ -92,10 +92,10 @@
     }
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=5')
+        navigator.serviceWorker.register('sw.js?v=6')
           .then(reg => {
             reg.update();
-            console.log('Service Worker v3 Network-First ativo');
+            console.log('Service Worker v6 Network-First ativo');
           })
           .catch(err => console.log('Falha no Service Worker:', err));
       });
