@@ -1,7 +1,7 @@
 {
-  "name": "NeuroScreen TDAH - Triagem Cognitiva",
-  "short_name": "NeuroScreen",
-  "description": "Jogo sério interativo para triagem inicial de indicadores atencionais e impulsividade.",
+  "name": "Jogo Interativo de Triagem Cognitiva",
+  "short_name": "Triagem Cognitiva",
+  "description": "Jogo interativo de triagem cognitiva com 6 fases neuropsicológicas validadas e personalização infantil e adulta.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0b1329",
