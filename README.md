@@ -10,18 +10,30 @@
 
 ---
 
-## 📲 JOGAR AGORA (Celular, Tablet e Computador)
+## 🚀 ACESSE O JOGO AGORA (Escolha o seu Dispositivo)
 
 > [!IMPORTANT]
-> **ATENÇÃO — Link para Celular e Computador:**  
-> Esta página do GitHub guarda o código-fonte do projeto. Para **abrir e jogar no Celular (Android ou iPhone) ou no PC**, clique no botão verde ou copie o link abaixo:
+> **Disponibilizamos dois links dedicados abaixo** — um otimizado para **Celular (Toque na Tela)** e outro otimizado para **Computador (Mouse e Teclado)**:
 
-[![CLIQUE AQUI PARA JOGAR](https://img.shields.io/badge/▶_CLIQUE_AQUI_PARA_ABRIR_O_JOGO-Celular_e_Computador-10B981?style=for-the-badge)](https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/)
+---
 
-🔗 **Link direto para copiar e enviar no WhatsApp (abre direto no celular):**  
-👉 **[https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/](https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/)**
+### 📱 1. Link para CELULAR (Android e iPhone)
+> **Este link é exclusivo para abrir no celular ou enviar pelo WhatsApp** (controles adaptados para toque na tela e modo aplicativo PWA):
 
-📱 **Como usar como Aplicativo no Celular:** Ao abrir o link acima no celular, toque no menu do navegador e selecione **"Adicionar à tela inicial"** ou **"Instalar aplicativo"**.
+[![ABRIR NO CELULAR](https://img.shields.io/badge/📱_ABRIR_JOGO_NO_CELULAR-Versão_Mobile_(Toque)-10B981?style=for-the-badge)](https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/?device=mobile)
+
+🔗 **Copie este link para abrir no celular:**  
+👉 **`https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/?device=mobile`**
+
+---
+
+### 💻 2. Link para COMPUTADOR (Notebook e PC)
+> **Este link é exclusivo para jogar no computador** (controles otimizados para cliques do mouse, barra de espaço, setas e teclado numérico):
+
+[![ABRIR NO COMPUTADOR](https://img.shields.io/badge/💻_ABRIR_JOGO_NO_COMPUTADOR-Versão_PC_(Mouse_e_Teclado)-2563EB?style=for-the-badge)](https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/?device=desktop)
+
+🔗 **Copie este link para abrir no computador:**  
+👉 **`https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/?device=desktop`**
 
 ---
 

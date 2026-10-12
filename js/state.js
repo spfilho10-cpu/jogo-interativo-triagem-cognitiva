@@ -56,7 +56,23 @@ export class SessionState {
   }
 
   detectDeviceInfo() {
-    const isTouch = typeof window !== 'undefined' && ('ontouchstart' in window || (typeof navigator !== 'undefined' && navigator.maxTouchPoints > 0));
+    let forcedDevice = null;
+    if (typeof window !== 'undefined' && window.location && window.location.search) {
+      const params = new URLSearchParams(window.location.search);
+      const devParam = params.get('device');
+      if (devParam === 'mobile' || devParam === 'desktop') {
+        forcedDevice = devParam;
+      }
+    }
+
+    const isTouch = forcedDevice
+      ? forcedDevice === 'mobile'
+      : (typeof window !== 'undefined' && ('ontouchstart' in window || (typeof navigator !== 'undefined' && navigator.maxTouchPoints > 0)));
+
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-device', isTouch ? 'mobile' : 'desktop');
+    }
+
     return {
       type: isTouch ? 'mobile/touch' : 'desktop/mouse',
       screen: typeof window !== 'undefined' ? `${window.innerWidth}x${window.innerHeight}` : '1920x1080',
