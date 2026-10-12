@@ -10,6 +10,21 @@
 
 ---
 
+## 📲 JOGAR AGORA (Celular, Tablet e Computador)
+
+> [!IMPORTANT]
+> **ATENÇÃO — Link para Celular e Computador:**  
+> Esta página do GitHub guarda o código-fonte do projeto. Para **abrir e jogar no Celular (Android ou iPhone) ou no PC**, clique no botão verde ou copie o link abaixo:
+
+[![CLIQUE AQUI PARA JOGAR](https://img.shields.io/badge/▶_CLIQUE_AQUI_PARA_ABRIR_O_JOGO-Celular_e_Computador-10B981?style=for-the-badge)](https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/)
+
+🔗 **Link direto para copiar e enviar no WhatsApp (abre direto no celular):**  
+👉 **[https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/](https://spfilho10-cpu.github.io/jogo-interativo-triagem-cognitiva/)**
+
+📱 **Como usar como Aplicativo no Celular:** Ao abrir o link acima no celular, toque no menu do navegador e selecione **"Adicionar à tela inicial"** ou **"Instalar aplicativo"**.
+
+---
+
 ## 📑 Tabela de Conteúdos
 
 - [Visão Geral](#-visão-geral)
