@@ -1,0 +1,6 @@
+{
+  "at": "tags",
+  "tags": ["v*"],
+  "version_file": "package.json",
+  "closure": ["index.html", "css/**", "js/**", "manifest.json", "sw.js", "package.json"]
+}

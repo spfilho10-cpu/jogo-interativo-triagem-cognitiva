@@ -1,6 +1,6 @@
 {
   "name": "jogo-interativo-triagem-cognitiva",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Jogo Interativo de Triagem Cognitiva com 6 fases neuropsicológicas validadas e personalização visual infantil e adulta (PWA).",
   "main": "js/app.js",
   "type": "module",
